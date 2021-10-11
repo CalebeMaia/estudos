@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>INICIAL</title>
+
+  
+</head><body style="background-color: rgb(204, 255, 255);">
+<p align="right">
+</p>
+
+<div style="text-align: center;"><span style="font-weight: bold;"><br>
+</span>
+<table style="height: 155px; width: 100px; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td style="width: 300px; height: 30px; text-align: center; vertical-align: middle;"><img style="width: 511px; height: 164px;" alt="" src="SKAUE0419.JPG"><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;
+<span style="font-weight: bold;"></span><br>
+<br>
+<table style="text-align: left; height: 32px; margin-left: auto; margin-right: auto; width: 1047px;">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; text-align: center; width: 200px;"><button><a href="INICIAL.html">INÍCIO</a></button><br>
+      </td>
+      <td style="vertical-align: middle; width: 200px; text-align: center;"><button><a href="ATENDIMENTO.html">ATENDIMENTO</a></button><br>
+      </td>
+      <td style="vertical-align: top; width: 200px; text-align: center;"><button><a href="FROTA.html">FROTA</a></button><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<table style="color: white; height: 344px; width: 869px; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <th style="color: black;" white-space:="">
+      <div>Horário comercial</div>
+      <div>Plantão: (95) XXXXX-XXXX</div>
+      <div>Seg:8:00 - 18:00</div>
+      <div>Ter:8:00 - 18:00</div>
+      <div>Qua:8:00 - 18:00</div>
+      <div>Qui:8:00 - 18:00</div>
+      <div>Sex:8:00 - 18:00</div>
+      <div>Sáb:8:00 - 18:00</div>
+      <div> Dom:Plantão</div>
+      </th>
+      <td style="vertical-align: top; width: 75px;"><br>
+      </td>
+      <td style="vertical-align: top; width: 625px;">
+      <div style="text-align: center;"> </div>
+      <div id="container-formulario-reserva">
+      <div style="text-align: center;"> </div>
+      <h2 style="color: black; text-align: left;">&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Alugue seu
+carro
+online!</h2>
+      <ul>
+        <li style="font-weight: bold; color: black;" class="first">
+          <div style="text-align: left;"><span>Retirar o carro em:</span>
+          <select class="campo_grande" name="A011_cd_empresa" id="A011_cd_empresa" onchange="SelEmpresa('RET');">
+          <option></option>
+          <option value="2">Alugéis de Carro BV</option>
+          </select>
+          </div>
+        </li>
+        <li style="font-weight: bold; color: black;" class="first">
+          <div style="text-align: left;"><span>Data da retirada:</span>
+          <input class="campo_pequeno hasDatepicker" id="A083_dt_locacao" onchange="SelData();" name="A083_dt_locacao" maxlength="10" readonly="true" onfocus="VerificaCalendario('A083_dt_locacao')" value="25/08/2021" type="text"> </div>
+        </li>
+        <li style="font-weight: bold; text-align: left; color: black;"><span>Horário:</span>
+          <select style="width: 62px;" class="campo-pequeno-selecao" id="A083_hr_locacao" name="A083_hr_locacao" onchange="SelHora('RET');ConfereHora('A083_hr_locacao','Locacao');">
+          <option value=""></option>
+          <option value="00">00</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09" selected="selected">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          </select>
+          <select style="width: 62px;" class="campo-pequeno-selecao" id="A083_mn_locacao" name="A083_mn_locacao" onchange="SelHora('RET');ConfereHora('A083_hr_locacao','Locacao');">
+          <option value=""></option>
+          <option value="00" selected="selected">00</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="40">40</option>
+          <option value="50">50</option>
+          </select>
+        </li>
+        <li style="font-weight: bold; text-align: left; color: black;" class="first"><span class="devolucao">Devolver o carro em:</span>
+          <select class="campo_grande" name="A011_cd_empresa_devolucao" onchange="SelEmpresa('DEV');">
+          <option></option>
+          <option value="2">Alugéis de Carro BV</option>
+          </select>
+        </li>
+        <li style="font-weight: bold; text-align: left; color: black;" class="first"><span class="devolucao">Data da devolução:</span> <input class="campo_pequeno hasDatepicker" id="A083_dt_retorno" onchange="SelData();" name="A083_dt_retorno" maxlength="10" readonly="true" onfocus="VerificaCalendario('A083_dt_retorno')" value="26/08/2021" type="text">&nbsp; </li>
+        <li style="color: black; width: 361px;">
+          <div style="text-align: left;"><span style="font-weight: bold;" class="devolucao">Horário:</span>
+          <select style="width: 62px;" class="campo-pequeno-selecao" id="A083_hr_retorno" name="A083_hr_retorno" onchange="ConfereHora('A083_hr_retorno','Retorno');">
+          <option value=""></option>
+          <option value="00">00</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09" selected="selected">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          </select>
+          <select style="width: 62px;" class="campo-pequeno-selecao" id="A083_mn_retorno" name="A083_mn_retorno" onchange="ConfereHora('A083_hr_retorno','Retorno');">
+          <option value=""></option>
+          <option value="00" selected="selected">00</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="40">40</option>
+          <option value="50">50</option>
+          </select>
+          </div>
+          <br>
+        </li>
+        <a href="Javascript:fEnviar();"><img src="bt_pesquisar.jpg" name="Submit" class="bt-pesq" style="max-width: 275px;"></a>
+      </ul>
+      </div>
+      <br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<p style="text-align: left;" class="MsoNormal"><span> </span><o:p></o:p></p>
+<br>
+</div>
+
+</body></html>
